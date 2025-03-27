@@ -58,3 +58,10 @@ git merge modifications
 ```
 
 Ouvrez le fichier `main.py`. Qu'observez-vous ?
+
+### Rebase
+
+Il y a dans ce dépôt une branche `math`. Basculez dessus avec la commande `git switch`
+
+Cette branche `math` a été créée avant les modifications que vous avez effectué dans `main.py`.
+Utilisez la commande `git rebase` pour mettre à jour la branche `math` avec les modifications de la branche `main`.
