@@ -65,3 +65,13 @@ Il y a dans ce dépôt une branche `math`. Basculez dessus avec la commande `git
 
 Cette branche `math` a été créée avant les modifications que vous avez effectué dans `main.py`.
 Utilisez la commande `git rebase` pour mettre à jour la branche `math` avec les modifications de la branche `main`.
+
+## Conflits
+
+Il se peut que lors de la fusion (*merge*) ou du rebase, il y ait des confilts entre plusieurs modifications.
+Cela arrive si, par exemple, deux personnes ont modifier la même ligne de code dans deux branches différentes.
+
+Lors du **merge** ou du **rebase**, Git va détecter ces conflits et vous proposer de les solutionner en conservant la version qui vous convient.
+
+Placez-vous dans la branche `main` et fusionnez la branche `conflict`. Git devrait vous ouvrir un éditeur pour vous inviter à résoudre le conflit
+concernant la ligne 2 du fichier `main.py`. Conservez la ligne que vous souhaitez (ou les deux), puis enregistrez et fermez le fichier.
